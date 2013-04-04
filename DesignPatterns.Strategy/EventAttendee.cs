@@ -5,7 +5,16 @@ using System.Text;
 
 namespace DesignPatterns.Strategy
 {
-	public class EventAttendee
+	public abstract class EventAttendee
 	{
+		public EventAttendee(string name)
+		{
+			Name = name;
+		}
+
+		public string Name { get; set; }
+
+		public abstract string Render();
+		public abstract string Compete();	
 	}
 }
