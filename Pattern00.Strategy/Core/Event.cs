@@ -8,18 +8,8 @@ namespace Pattern00.Strategy.Core
 {
 	public abstract class Event
 	{
-		public IEventDetails EventDetails { get; set; }
-
-		public Event(IEventDetails eventDetails)
+		public Event()
 		{
-			EventDetails = eventDetails;
-		}		
-
-		public void DisplayEventDetails()
-		{
-			EventDetails.DisplayEventDetails();
-			Console.WriteLine("Finish the race");
-			Console.WriteLine("");
 
 		}
 	}
