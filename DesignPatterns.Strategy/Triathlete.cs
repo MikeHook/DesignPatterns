@@ -5,15 +5,15 @@ using System.Text;
 
 namespace DesignPatterns.Strategy
 {
-	public class Runner : EventAttendee
+	public class Triathlete : EventAttendee
 	{
-		public Runner(string name, ICompeteBehaviour competeBehaviour)
+		public Triathlete(string name, ICompeteBehaviour competeBehaviour)
 			: base(name, competeBehaviour)
 		{ }
 
 		public override string Render()
 		{
-			return string.Format("I am a runner, my name is {0}", Name);
+			return string.Format("I am a triathlete, my name is {0}", Name);
 		}
 	}
 }

@@ -40,10 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttendeeBehaviours\CompeteInTri.cs" />
+    <Compile Include="AttendeeBehaviours\DontCompete.cs" />
+    <Compile Include="AttendeeBehaviours\ICompeteBehaviour.cs" />
+    <Compile Include="AttendeeBehaviours\Run.cs" />
+    <Compile Include="Marshall.cs" />
     <Compile Include="EventAttendee.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Runner.cs" />
+    <Compile Include="Triathlete.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

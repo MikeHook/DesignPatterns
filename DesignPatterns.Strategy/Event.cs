@@ -16,14 +16,16 @@ namespace DesignPatterns.Strategy
 		public string Name { get; set; }
 		public List<EventAttendee> EventAttendees { get; set; }
 
-		public List<string> RenderAttendees()
+		public IEnumerable<string> RenderAttendees()
 		{
-			var attendees = new List<string>();
-			foreach (var attendee in EventAttendees)
-			{
-				attendees.Add(attendee.Render());
-			}
-			return attendees;
+			return EventAttendees.Select(a => a.Render());			
+		}
+
+		public IEnumerable<string> ConductEvent()
+		{
+			var results = new List<string>();
+			EventAttendees.ForEach(a => a.Compete(results));
+			return results;
 		}
 	}
 }
