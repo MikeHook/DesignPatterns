@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Strategy", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Tests", "DesignPatterns.Tests\DesignPatterns.Tests.csproj", "{AA51B531-3155-4E7E-83EF-06E2D58EDB43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Observer", "DesignPatterns.Observer\DesignPatterns.Observer.csproj", "{4E93405B-D578-4A10-8796-5B4860DE908F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,16 @@ Global
 		{AA51B531-3155-4E7E-83EF-06E2D58EDB43}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{AA51B531-3155-4E7E-83EF-06E2D58EDB43}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{AA51B531-3155-4E7E-83EF-06E2D58EDB43}.Release|x86.ActiveCfg = Release|Any CPU
+		{4E93405B-D578-4A10-8796-5B4860DE908F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E93405B-D578-4A10-8796-5B4860DE908F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E93405B-D578-4A10-8796-5B4860DE908F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4E93405B-D578-4A10-8796-5B4860DE908F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4E93405B-D578-4A10-8796-5B4860DE908F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4E93405B-D578-4A10-8796-5B4860DE908F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E93405B-D578-4A10-8796-5B4860DE908F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E93405B-D578-4A10-8796-5B4860DE908F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4E93405B-D578-4A10-8796-5B4860DE908F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4E93405B-D578-4A10-8796-5B4860DE908F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

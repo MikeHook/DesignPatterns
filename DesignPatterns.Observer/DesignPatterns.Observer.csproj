@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AA51B531-3155-4E7E-83EF-06E2D58EDB43}</ProjectGuid>
+    <ProjectGuid>{4E93405B-D578-4A10-8796-5B4860DE908F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DesignPatterns.Tests</RootNamespace>
-    <AssemblyName>DesignPatterns.Tests</AssemblyName>
+    <RootNamespace>DesignPatterns.Observer</RootNamespace>
+    <AssemblyName>DesignPatterns.Observer</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,22 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ObserverTests.cs" />
-    <Compile Include="StrategyTests.cs" />
+    <Compile Include="ElectionData.cs" />
+    <Compile Include="Contract\IObserver.cs" />
+    <Compile Include="Contract\ISubject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DesignPatterns.Observer\DesignPatterns.Observer.csproj">
-      <Project>{4E93405B-D578-4A10-8796-5B4860DE908F}</Project>
-      <Name>DesignPatterns.Observer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DesignPatterns.Strategy\DesignPatterns.Strategy.csproj">
-      <Project>{6516974C-A3EB-44CF-AAFF-821B8E57048D}</Project>
-      <Name>DesignPatterns.Strategy</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
