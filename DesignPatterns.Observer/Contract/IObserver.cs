@@ -7,5 +7,6 @@ namespace DesignPatterns.Observer.Contract
 {
 	public interface IObserver
 	{
+		void Update();
 	}
 }

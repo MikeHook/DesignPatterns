@@ -40,10 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ElectionData.cs" />
     <Compile Include="Contract\IObserver.cs" />
     <Compile Include="Contract\ISubject.cs" />
+    <Compile Include="Election.cs" />
+    <Compile Include="ElectionMap.cs" />
+    <Compile Include="LeaderBoard.cs" />
+    <Compile Include="Party.cs" />
+    <Compile Include="PartyType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SwingOmeter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

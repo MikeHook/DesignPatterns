@@ -7,5 +7,11 @@ namespace DesignPatterns.Observer.Contract
 {
 	public interface ISubject
 	{
+		IList<IObserver> Observers { get; set; }
+
+		void Register(IObserver observer);
+		void Unregister(IObserver observer);
+		void Notify();
+
 	}
 }
